@@ -1,0 +1,24 @@
+package runners;
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
+@CucumberOptions(
+	features = "src//test//resources//features//GooglePageSearch.feature",
+			glue= {"stepDefs"},
+			monochrome=true,
+			dryRun=false,
+			plugin= {"pretty",
+			"html:target//Reports//HtmlReport.html",
+			//"json:target//Reports//jsonReport.json",
+			//"usage:target//Reports//UsageReport",
+			//"rerun:target//failedScenarios.txt"
+			}
+			//tags = "@PhaseOne and @SmokeTest"
+			
+	)
+
+public class GooglePageRunner extends AbstractTestNGCucumberTests {
+
+
+}

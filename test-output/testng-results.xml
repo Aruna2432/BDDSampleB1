@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="146724" started-at="2023-03-08T20:26:56 IST" finished-at="2023-03-08T20:29:23 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GooglePageRunner@646007f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="146724" started-at="2023-03-08T20:26:56 IST" finished-at="2023-03-08T20:29:23 IST">
+      <class name="runners.GooglePageRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.GooglePageRunner@646007f4]" name="setUpClass" is-config="true" duration-ms="2634" started-at="2023-03-08T20:26:56 IST" finished-at="2023-03-08T20:26:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22a0d4ea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GooglePageRunner@646007f4]" name="runScenario" duration-ms="69650" started-at="2023-03-08T20:26:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-08T20:28:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Java Search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Search Function"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GooglePageRunner@646007f4]" name="runScenario" duration-ms="64391" started-at="2023-03-08T20:28:08 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-08T20:29:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Selenium Search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Search Function"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Selenium Tutorial - Google Search Page] but found [Selenium Tutorial - Google Search]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Selenium Tutorial - Google Search Page] but found [Selenium Tutorial - Google Search]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepDefs.GoogleStepDef.should_display_selenium_result_page(GoogleStepDef.java:47)
+at ✽.Should display Selenium Result Page(file:///E:/SDETTrainingWS/BDDSampleB1/src/test/resources/features/GooglePageSearch.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.GooglePageRunner@646007f4]" name="tearDownClass" is-config="true" duration-ms="9855" started-at="2023-03-08T20:29:13 IST" finished-at="2023-03-08T20:29:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.GooglePageRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
